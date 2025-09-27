@@ -256,14 +256,23 @@ series.data = [ {
     "tag": "PHP",
     "count": "188787"
 }, {
+    "tag": "Unity",
+    "count": "188787"
+}, {
     "tag": "CSS",
     "count": "154447"
 }, {
     "tag": "Minecraft",
     "count": "703121"
 }, {
+    "tag": "VS Code",
+    "count": "703121"
+}, {
     "tag": "Json",
     "count": "257159"
+}, {
+    "tag": "Blender",
+    "count": "357159"
 }, {
     "tag": "Linux",
     "count": "173278"
@@ -272,7 +281,7 @@ series.data = [ {
     "count": "118810"
 }, {
     "tag": "Git",
-    "count": "192393"
+    "count": "392393"
 } ];
 
 series.dataFields.word = "tag";
