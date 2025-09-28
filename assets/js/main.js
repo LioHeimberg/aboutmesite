@@ -303,3 +303,32 @@ var hoverState = series.labels.template.states.create("hover");
 hoverState.properties.fill = am4core.color("#FF0000");
 
 });
+
+
+  const toggle = document.createElement('button');
+  toggle.innerText = '🌙 Dark Mode';
+  toggle.id = 'darkModeToggle';
+  toggle.style.position = 'fixed';
+  toggle.style.bottom = '20px';
+  toggle.style.right = '20px';
+  toggle.style.zIndex = '99999';
+  toggle.style.padding = '10px 15px';
+  toggle.style.borderRadius = '20px';
+  toggle.style.border = 'none';
+  toggle.style.background = '#149ddd';
+  toggle.style.color = 'white';
+  toggle.style.cursor = 'pointer';
+  document.body.appendChild(toggle);
+
+  // Zustand merken
+  if (localStorage.getItem('dark-mode') === 'enabled') {
+    document.documentElement.classList.add('dark-mode');
+    toggle.innerText = '☀️ Light Mode';
+  }
+
+  toggle.addEventListener('click', () => {
+    document.documentElement.classList.toggle('dark-mode');
+    const isDark = document.documentElement.classList.contains('dark-mode');
+    toggle.innerText = isDark ? '☀️ Light Mode' : '🌙 Dark Mode';
+    localStorage.setItem('dark-mode', isDark ? 'enabled' : 'disabled');
+  });

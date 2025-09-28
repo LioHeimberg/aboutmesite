@@ -37,6 +37,28 @@
   --nav-dropdown-hover-color: #ffffff; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
+:root.dark-mode {
+  --background-color: #0e1625;
+  --surface-color: #1b2434;
+  --default-color: #e0e0e0;
+  --heading-color: #ffffff;
+  --accent-color: #149ddd;
+  --contrast-color: #ffffff;
+
+  --nav-color: #b0b3c1;
+  --nav-hover-color: #ffffff;
+  --nav-dropdown-background-color: #1b2434;
+  --nav-dropdown-color: #b0b3c1;
+  --nav-dropdown-hover-color: #ffffff;
+}
+
+:root.dark-mode .light-background {
+  --background-color: #151b29; /* dunkler Hintergrund für light sections */
+  --surface-color: #1b2434;
+  --default-color: #e0e0e0;
+  --heading-color: #ffffff;
+}
+
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
